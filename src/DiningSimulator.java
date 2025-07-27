@@ -98,11 +98,6 @@ public class DiningSimulator {
     /**
      * Runs the simulation for the specified number of time units, managing arrivals,
      * serving Customers, and printing results at each step.
-     * <p>
-     * IMPORTANT: We print queue states first (after arrivals) so that new Customers
-     * show up with their full cooking+eating time. Then we decrement cooking times.
-     * This matches the assignment's sample I/O style.
-     * </p>
      *
      * @return the average time spent per served customer
      */
@@ -209,10 +204,9 @@ public class DiningSimulator {
 
     /**
      * The main entry point for the DiningSimulator program.
-     * <p>
      * Prompts the user for parameters, constructs a DiningSimulator,
      * and runs simulations until the user decides to quit.
-     * </p>
+     *
      *
      * @param args command-line arguments (not used)
      */
